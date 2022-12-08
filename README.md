@@ -1,2 +1,3 @@
-# store-beta
-test prototype of internet store
+# NextJS Tailwind E-Commerce website. (Test Version)
+
+## To be edited...
