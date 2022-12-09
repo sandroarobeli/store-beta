@@ -1,5 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,12 +6,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    // CHANGES DEFAULTS... (CHANGES WHAT ALREADY EXISTS IN TAILWIND)
+    screens: {
+      mobile: "640px",
+      tablet: "768px",
+      laptop: "1024px",
+    },
     extend: {
+      // EXTENDS DEFAULTS... (ADDS WHAT TAILWIND DIDN'T HAVE BEFORE)
       fontFamily: {
-        caveat: ["var(--font-caveat)", "cursive"],
-        lora: ["var(--font-lora)", "serif"],
         orbitron: ["var(--font-orbitron)", "sans-serif"],
-        exo: ["var(--font-exo)", "sans-serif"],
       },
     },
   },
@@ -38,10 +40,7 @@ theme: {
       fontSize: {
         gargantuan: "10rem", // Example
       },
-      fontFamily: {
-        layout_header: ["Nunito"],
-        layout_links: ["Kalam"],
-      },
+      
       colors: {
         primary: "#FF6363",
         secondary: {
