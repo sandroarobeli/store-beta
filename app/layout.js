@@ -1,9 +1,28 @@
+import { Orbitron } from "@next/font/google";
 import "./globals.css";
 
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+// If loading VARIABLE font, no need to specify the font weight
+export const orbitron = Orbitron({
+  variable: "--font-orbitron",
+});
+
+// Container sets this: sm (640px)	max-width: 640px;
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={`${orbitron.variable}`}>
+      <body className="flex flex-col justify-between min-h-screen">
+        <Header />
+        <main
+          className="container m-auto mt-4 px-4"
+          style={{ border: "1px solid red" }}
+        >
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
