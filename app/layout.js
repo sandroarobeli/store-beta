@@ -15,12 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${orbitron.variable}`}>
       <body className="flex flex-col justify-between min-h-screen">
         <Header />
-        <main
-          className="container m-auto mt-4 px-4"
-          style={{ border: "1px solid red" }}
-        >
-          {children}
-        </main>
+        <main className="container m-auto mt-4 px-4">{children}</main>
         <Footer />
       </body>
     </html>

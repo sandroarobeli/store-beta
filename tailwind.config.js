@@ -7,11 +7,6 @@ module.exports = {
   ],
   theme: {
     // CHANGES DEFAULTS... (CHANGES WHAT ALREADY EXISTS IN TAILWIND)
-    screens: {
-      mobile: "640px",
-      tablet: "768px",
-      laptop: "1024px",
-    },
     extend: {
       // EXTENDS DEFAULTS... (ADDS WHAT TAILWIND DIDN'T HAVE BEFORE)
       fontFamily: {
