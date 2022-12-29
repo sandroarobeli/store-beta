@@ -1,7 +1,7 @@
 import { data } from "../utilities/data"; // For temporary testing use
 //import { Suspense } from "react";
 
-import ProductItem from "./components/Product-Item";
+import ProductItem from "./components/productItem";
 
 // DATA (data in this example) GETS FETCHED HERE AND INJECTED DIRECTLY INTO PAGE!
 // NOT PASSED AS PROPS
@@ -16,7 +16,7 @@ import ProductItem from "./components/Product-Item";
   }
 */
 
-export default function Page() {
+export default function HomeScreen() {
   // const products = await getProducts();
 
   return (

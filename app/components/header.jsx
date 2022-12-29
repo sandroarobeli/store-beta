@@ -1,5 +1,6 @@
-import React from "react";
 import Link from "next/link";
+
+import QuantityBadge from "./quantityBadge";
 
 export default function Header() {
   return (
@@ -11,6 +12,7 @@ export default function Header() {
         <div>
           <Link href="/cart" className="p-2">
             Cart
+            <QuantityBadge />
           </Link>
           <Link href="/login" className="p-2">
             Login

@@ -2,7 +2,9 @@
 // AND REVALIDATION
 import Link from "next/link";
 import Image from "next/image";
+
 import { data } from "../../../utilities/data"; //Temporary. will be substituted by fetch later...
+import AddToCartButton from "../../components/addToCartButton";
 
 export default function ProductScreen({ params }) {
   const { slug } = params;
@@ -50,7 +52,7 @@ export default function ProductScreen({ params }) {
               <div>Status</div>
               <div>{product.inStock > 0 ? "In stock" : "Sold out"}</div>
             </div>
-            <button className="primary-button w-full">Add to Cart</button>
+            <AddToCartButton product={product} />
           </div>
         </div>
       </div>

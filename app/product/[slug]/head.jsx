@@ -1,4 +1,4 @@
-import SharedMeta from "../../components/Shared-meta";
+import SharedMeta from "../../components/sharedMeta";
 import { data } from "../../../utilities/data";
 
 export default function Head({ params }) {
@@ -15,6 +15,23 @@ export default function Head({ params }) {
     </>
   );
 }
+
+/*
+export async function generateStaticParams() {
+  const { users } = await getUsers();
+
+  return users.map((user) => ({
+    userId: user.id,
+  }));
+}
+
+const Page = async ({ params }) => {
+  const { user } = await getUserById(params.userId);
+
+  return <User user={user} />;
+};
+
+*/
 
 /*
 async function getPost(slug) {
