@@ -69,7 +69,7 @@ export const data = {
       brand: "Casely",
       rating: 2.4,
       reviews: 14,
-      inStock: 20,
+      inStock: 17,
       description: "Casual pants",
     },
   ],
