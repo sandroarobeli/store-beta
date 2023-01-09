@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import QuantityBadge from "./quantityBadge";
+import QuantityBadge from "./QuantityBadge";
 
 export default function Header() {
   return (

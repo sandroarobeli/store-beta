@@ -1,7 +1,7 @@
 import { data } from "../utilities/data"; // For temporary testing use
 //import { Suspense } from "react";
 
-import ProductItem from "./components/productItem";
+import ProductItem from "./components/ProductItem";
 
 // DATA (data in this example) GETS FETCHED HERE AND INJECTED DIRECTLY INTO PAGE!
 // NOT PASSED AS PROPS

@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
 
 import { StoreContext } from "../utils/storeProvider";
-import DialogModal from "./dialogModal";
+import DialogModal from "./DialogModal";
 
 export default function AddToCartButton({ product }) {
   const { state, dispatch } = useContext(StoreContext);

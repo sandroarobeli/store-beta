@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
-import AddToCartButton from "./addToCartButton";
+import AddToCartButton from "./AddToCartButton";
 
 export default function ProductItem({ product }) {
   return (
