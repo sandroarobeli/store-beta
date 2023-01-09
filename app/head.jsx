@@ -1,4 +1,4 @@
-import SharedMeta from "./components/sharedMeta";
+import SharedMeta from "./components/SharedMeta";
 
 export default function Head() {
   return (
