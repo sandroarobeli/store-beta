@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { data } from "../../../utilities/data"; //Temporary. will be substituted by fetch later...
+import { data } from "../../../auxillary/data"; //Temporary. will be substituted by fetch later...
 import AddToCartButton from "../../components/AddToCartButton";
 
 export default function ProductScreen({ params }) {

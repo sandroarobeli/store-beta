@@ -11,7 +11,7 @@ const initialState = {
   // Cookies can only save json, so if cart object exists, parse it
   cart: Cookies.get("cart")
     ? JSON.parse(Cookies.get("cart"))
-    : { cartItems: [] },
+    : { cartItems: [], shippingAddress: {}, paymentMethod: "" },
 };
 
 function reducer(state, action) {
@@ -39,6 +39,16 @@ function reducer(state, action) {
       // We store cart with removed items in Cookies as string
       Cookies.set("cart", JSON.stringify({ ...state.cart, cartItems }));
       return { ...state, cart: { ...state.cart, cartItems } };
+    }
+    case "CART_RESET": {
+      return {
+        ...state,
+        cart: {
+          cartItems: [],
+          shippingAddress: {},
+          paymentMethod: "",
+        },
+      };
     }
     default: {
       return state;

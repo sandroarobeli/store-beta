@@ -1,4 +1,4 @@
-import { data } from "../utilities/data"; // For temporary testing use
+import { data } from "../auxillary/data"; // For temporary testing use
 //import { Suspense } from "react";
 
 import ProductItem from "./components/ProductItem";
