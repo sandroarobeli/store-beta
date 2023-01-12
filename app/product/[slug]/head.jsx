@@ -1,5 +1,5 @@
 import SharedMeta from "../../components/SharedMeta";
-import { data } from "../../../utilities/data";
+import { data } from "../../../auxillary/data";
 
 export default function Head({ params }) {
   const { slug } = params;

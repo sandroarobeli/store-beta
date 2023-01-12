@@ -12,8 +12,7 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  @apply text-blue-600 hover:text-blue-800;
 }
 
 * {
@@ -36,4 +35,22 @@ a {
 
 .primary-button {
   @apply rounded font-semibold bg-amber-300 py-2 px-4 shadow outline-none hover:bg-amber-400 active:bg-amber-500;
+}
+
+.error-button {
+  @apply rounded font-semibold text-white bg-red-500 py-2 px-4 shadow outline-none hover:bg-red-600 active:bg-red-700;
+}
+
+.google-button {
+  @apply flex justify-center gap-2 border w-full px-4 py-2 rounded shadow outline-none font-semibold hover:bg-gray-200 active:bg-gray-300;
+}
+
+input,
+select,
+textarea {
+  @apply rounded border p-2 outline-none bg-indigo-50;
+}
+
+.dropdown-link {
+  @apply flex justify-center p-2 hover:bg-gray-200;
 }

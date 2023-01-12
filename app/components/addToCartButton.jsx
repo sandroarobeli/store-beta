@@ -41,7 +41,7 @@ export default function AddToCartButton({ product }) {
         onClose={() => setModalOpen(false)}
         title="Out of Stock!"
         description="Order exceeded currently available quantity"
-        className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-gray-900 primary-button"
+        className="inline-flex justify-center border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-gray-900 primary-button"
       />
     </>
   );
