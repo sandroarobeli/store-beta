@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Menu } from "@headlessui/react";
 import Cookies from "js-cookie";
 
-import { StoreContext } from "../utils/storeProvider.js";
+import { StoreContext } from "./StoreProvider";
 
 export default function UserBadge() {
   const { status, data: session } = useSession(); // data: session, signOut

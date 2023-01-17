@@ -23,12 +23,12 @@ export default function LoginScreen() {
     register,
     formState: { errors },
   } = useForm();
-
   // IF LOGGED IN (THERE IS ACTIVE SESSION), ==> REDIRECT TO whence (IF COMING FRO CART),
   // OTHERWISE, ==> REDIRECT TO HOME (IF COMING FROM SOMEWHERE ELSE)
   useEffect(() => {
     if (session?.user) {
       console.log("session.user: ", session.user); // test
+      // console.log("status: ", status); // test
       redirect(whence || "/"); // OR router.push(whence || '/')
     }
   }, [session, whence]);
@@ -40,6 +40,7 @@ export default function LoginScreen() {
         email: email,
         password: password,
       });
+
       if (result.error) {
         // Returns an error from signIn call
         setErrorMessage(result.error);
@@ -51,10 +52,6 @@ export default function LoginScreen() {
       setModalOpen(true);
     }
   };
-
-  // ALSO, TRY THROWING AN ERROR IF REDIRECT WORKS LIKE LAST TIME
-  // AS IN DIALOG MODAL POPS UP INSTEAD OF UNAUTHORIZED PAGE
-  // TRY PUSH INSTEAD OF REDIRECT FIRST...
 
   return (
     <>

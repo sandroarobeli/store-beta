@@ -3,7 +3,7 @@
 import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import { StoreContext } from "../utils/storeProvider";
+import { StoreContext } from "./StoreProvider";
 import DialogModal from "./DialogModal";
 
 export default function AddToCartButton({ product }) {
