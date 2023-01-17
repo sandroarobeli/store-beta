@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 
-import { StoreContext } from "../utils/storeProvider.js";
+import { StoreContext } from "../components/StoreProvider";
 import { XCircleIcon } from "@heroicons/react/24/outline";
 
 function CartScreen() {
@@ -108,7 +108,9 @@ function CartScreen() {
               </li>
               <li>
                 <button
-                  onClick={() => router.push("login?redirect=/shipping")}
+                  onClick={() =>
+                    router.push("login?redirect=/shipping-address")
+                  }
                   className="primary-button mt-2 w-full"
                 >
                   Check Out

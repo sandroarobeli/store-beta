@@ -3,8 +3,8 @@ import "./globals.css";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import StoreProvider from "./utils/storeProvider";
-import SessionProvider from "./utils/sessionProvider";
+import StoreProvider from "./components/StoreProvider";
+import SessionProvider from "./components/SessionProvider";
 
 // If loading VARIABLE font, no need to specify the font weight
 export const orbitron = Orbitron({

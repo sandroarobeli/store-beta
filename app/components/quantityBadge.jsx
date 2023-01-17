@@ -2,7 +2,7 @@
 
 import { useContext, useState, useEffect } from "react";
 
-import { StoreContext } from "../utils/storeProvider";
+import { StoreContext } from "./StoreProvider";
 
 export default function QuantityBadge() {
   const { state } = useContext(StoreContext);
